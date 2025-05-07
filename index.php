@@ -1,3 +1,7 @@
+<?php 
+require_once('./vendor/autoload.php');
+require_once('config.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,6 +10,6 @@
     <title>Prontuário Veterinário</title>
 </head>
 <body>
-    
+
 </body>
 </html>
