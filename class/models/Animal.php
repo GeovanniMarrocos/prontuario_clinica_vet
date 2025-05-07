@@ -1,7 +1,7 @@
 <?php 
 
 
-class Animal extends Especie {
+class Animal {
 
     public $codigo;
     public $nome;
