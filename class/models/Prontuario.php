@@ -2,16 +2,16 @@
 
 class Prontuario 
 {
-    public $codigo;
-    public $codigo_tratamento;
-    public $data_tratamento;
+    public $animal;
+    public $tratamento;
+    public $dataTratamento;
     public $descricao;
 
-    public function __construct($codigo = null, $codigo_tratamento = null, $data_tratamento = null, $descricao = null) 
+    public function __construct($animal = null, $tratamento = null, $dataTratamento = null, $descricao = null) 
     {
-        $this->codigo = $codigo;
-        $this->codigo_tratamento = $codigo_tratamento;
-        $this->data_tratamento = $data_tratamento;
+        $this->animal = $animal;
+        $this->tratamento = $tratamento;
+        $this->dataTratamento = $dataTratamento;
         $this->descricao = $descricao;
 
     } 
