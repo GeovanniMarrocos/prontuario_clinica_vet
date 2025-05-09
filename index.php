@@ -1,17 +1,24 @@
 <?php 
+require_once('./class/controllers/AnimalController.php');
 require_once('./vendor/autoload.php');
 require_once('./helpers/url.php');
 require_once('config.php');
+
+    $animalController = new AnimalController();
+    $listaTodosAnimais = $animalController->listar();
+
+    dump($listaTodosAnimais);
+
 ?>
 <?php include('./templates/header.php')?>
-<section id="area-busca">
+<section class=" container" id="area-busca">
         <input type="text" placeholder="Informe nome do animal">
         <button>Buscar</button>
     </section>
 
     <section id="resultados">
 
-        <div class="caixaAnimal">
+        <div class="caixaAnimal card">
             <a href="atendimento.php">
                 <img src="images/brutus.png">    
                 <div>
