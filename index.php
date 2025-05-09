@@ -3,11 +3,9 @@ require_once('./class/controllers/AnimalController.php');
 require_once('./vendor/autoload.php');
 require_once('./helpers/url.php');
 require_once('config.php');
+require_once('./class/views/AnimalView.php');
 
-    $animalController = new AnimalController();
-    $listaTodosAnimais = $animalController->listar();
 
-    dump($listaTodosAnimais);
 
 ?>
 <?php include('./templates/header.php')?>
@@ -23,7 +21,12 @@ require_once('config.php');
                 <img src="images/brutus.png">    
                 <div>
                     <h1>Brutus</h1>
-                    <p>Buldog</p>
+
+                    <p><?php 
+                        $exibirAnimais = new AnimalView();
+                        $exibirAnimais->ExibirTodosAnimais(); 
+                        ?>
+                    </p>
                 </div>
             </a>
         </div>
