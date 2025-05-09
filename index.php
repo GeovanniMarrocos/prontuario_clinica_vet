@@ -4,10 +4,8 @@ require_once('./vendor/autoload.php');
 require_once('./helpers/url.php');
 require_once('config.php');
 require_once('./class/views/AnimalView.php');
-
-
-
 ?>
+
 <?php include('./templates/header.php')?>
 <section class=" container" id="area-busca">
         <input type="text" placeholder="Informe nome do animal">
@@ -16,20 +14,20 @@ require_once('./class/views/AnimalView.php');
 
     <section id="resultados">
 
-        <div class="caixaAnimal card">
+        <!-- <div class="caixaAnimal card">
             <a href="atendimento.php">
                 <img src="images/brutus.png">    
                 <div>
                     <h1>Brutus</h1>
 
                     <p><?php 
-                        $exibirAnimais = new AnimalView();
-                        $exibirAnimais->ExibirTodosAnimais(); 
+                        //$exibirAnimais = new AnimalView();
+                        //$exibirAnimais->ExibirTodosAnimais(); 
                         ?>
                     </p>
                 </div>
             </a>
-        </div>
+        </div> -->
 
         <div class="caixaAnimal">
             <a href="atendimento.php">

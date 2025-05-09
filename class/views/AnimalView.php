@@ -9,7 +9,15 @@ class AnimalView
 
         for ($i = 0; $i < count($listaTodosAnimais); $i++)
         {
-            echo "<h2>{$listaTodosAnimais[$i]->nome}</h2>";
+           echo '<div class="caixaAnimal">
+                    <a href="atendimento.php">
+                    <img src="images/flocos.png">    
+                <div>
+                    <h1>Flocos</h1>
+                    <p>Dálmata</p>
+                </div>
+                    </a>
+                </div';
         }
     }
 }
