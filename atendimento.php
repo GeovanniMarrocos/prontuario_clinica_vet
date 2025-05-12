@@ -3,16 +3,9 @@ require_once("./vendor/autoload.php");
 require_once("./helpers/url.php");
 require_once("config.php");
 ?>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clínica Veterinária</title>
-    <link rel="stylesheet" href="<?php echo $BASE_URL;?>/style.css">
-    <link rel="stylesheet" href="<?php echo $BASE_URL;?>/serviceStyle.css">
-</head>
-<body>
+
+
+<?php include_once("./templates/header.php");?>
     <section id="area-titulo">
         <h1>Atendimento</h1>
         <a href="index.html" class="botao">Voltar</a>
@@ -74,5 +67,4 @@ require_once("config.php");
             </tbody>
         </table>
     </section>
-</body>
-</html>
+<?php include_once("./templates/footer.php");?>

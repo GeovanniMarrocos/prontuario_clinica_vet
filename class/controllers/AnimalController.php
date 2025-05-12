@@ -23,7 +23,7 @@ class AnimalController
                  $nome = $dados['nm_animal'];
                  $codigoEspecie = $dados['cd_especie'];
 
-                 $animal =  new Animal($codigo, $nome);
+                 $animal =  new Animal( $codigo, $nome);
                  array_push($lista, $animal);
                  
            }
