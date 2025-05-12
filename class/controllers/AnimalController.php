@@ -23,7 +23,15 @@ class AnimalController
                  $nome = $dados['nm_animal'];
                  $codigoEspecie = $dados['cd_especie'];
 
-                 $animal =  new Animal( $codigo, $nome);
+                 $cSQL_Especie = $pdo->prepare('select nm_especie from especie where cd_especie= :codigo');
+                 $cSQL->bindParam('codigo', $codigoEspecie);
+                 $cSQL_Especie->execute();
+
+                 $dadosEspecie = $cSQL_Especie->fetch(PDO::FETCH_ASSOC);
+                 $nomeEspecie =  $dadosEspecie['nm_especie'];
+                 
+
+                 $animal =  new Animal($codigo, $nome);
                  array_push($lista, $animal);
                  
            }
