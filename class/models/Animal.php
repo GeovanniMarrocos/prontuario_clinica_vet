@@ -13,7 +13,7 @@ class Animal {
         $this->nome = $nome;
         $this->especie = $especie;
 
-        if (empty($especie)) {
+        if (isset($especie)) {
             $this->especie = $especie;        
         }
         else{

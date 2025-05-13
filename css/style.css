@@ -85,3 +85,13 @@ body {
     color: #a43ec7;
     text-transform: uppercase;
 }
+
+.nav-link.active {
+    color: #a43ec7; 
+    background-color: #f8f9fa; 
+}
+
+.nav-link {
+    color: #a43ec7; 
+    background-color: #f8f9fa; 
+}

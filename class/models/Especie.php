@@ -2,14 +2,14 @@
 
 class Especie 
 {
-    public $codigoEspecie;
-    public $nomeEspecie;
+    public $codigo;
+    public $nome;
     
 
-    public function __construct($codigoEspecie = null , $nomeEspecie = null)
+    public function __construct($codigo = null , $nome = null)
     {
-        $this->codigoEspecie = $codigoEspecie;
-        $this->nomeEspecie = $nomeEspecie;
+        $this->codigo = $codigo;
+        $this->nome = $nome;
     }
 
 

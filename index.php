@@ -35,8 +35,18 @@ if (isset($_GET['valorBusca']))
   <?php   
             if($buscar == true)
             {
-                $objAnimal = new AnimalView();
-                $objAnimal->ExibirTodosAnimais();
+                $animalView = new AnimalView();
+                if($valor == "")
+                {
+
+                
+                $animalView->ExibirTodosAnimais();
+
+                }
+                else 
+                {
+                    $animalView->BuscarPeloNome($valor);    
+                }
             }
             
    ?>
