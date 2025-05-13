@@ -11,13 +11,13 @@ class AnimalView
 
         for($i = 0; $i < count($listaTodosAnimais); $i++)
         {
-           
+           dump($listaTodosAnimais[$i]);
             echo "<div class='caixaAnimal'>
                     <a href='atendimento.php'>
                     <img src='./images/{$listaTodosAnimais[$i]->nome}.png'>    
                     <div>
                         <h1>{$listaTodosAnimais[$i]->nome}</h1>
-                        <p>{$listaTodosAnimais[$i]->especie}</p>
+                        <p>{$listaTodosAnimais[$i]->especie->nome}</p>
                     </div>
                     </a>
                 </div>";
